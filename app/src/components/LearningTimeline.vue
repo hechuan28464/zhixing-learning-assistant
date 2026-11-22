@@ -1,0 +1,15 @@
+<script setup>
+import RecordPagination from './ui/RecordPagination.vue'
+import {usePagination} from '../usePagination.js'
+import {computed,ref} from 'vue'
+import {useLearning} from '../useLearning.js'
+import {artwork,icon} from '../assets.js'
+const emit=defineEmits(['explore','new-goal'])
+const {state,openSession}=useLearning()
+const filter=ref('all')
+const category=e=>/^(tutor|memory)_/.test(e.type)?'buddy':/^(note|material)_/.test(e.type)?'content':'learning'
+const entries=computed(()=>(state.boot?.events||[]).filter(e=>filter.value==='all'||category(e)===filter.value).filter(e=>e.title.toLowerCase().includes(state.query.trim().toLowerCase())))
+const picture=e=>category(e)==='buddy'?artwork.mentor:category(e)==='content'?'/assets/split-elements/scenes/notes-card-scene.png.webp':artwork[state.boot.sessions.find(s=>s.id===e.session_id)?.course_id]||artwork.systems
+const {page:timelinePage,items:timelineRows}=usePagination(entries,()=>[filter.value,state.query])
+</script>
+<template><section class="timeline-page-live"><div class="studio-pills"><button v-for="[key,label] in [['all','全部动态'],['learning','目标与练习'],['content','资料与笔记'],['buddy','来自伙伴']]" :key="key" :class="{active:filter===key}" @click="filter=key">{{ label }}</button></div><div class="timeline-page-grid"><div class="learning-timeline"><article v-for="entry in timelineRows" :key="entry.id"><time :datetime="entry.created_at"><strong>{{ new Date(entry.created_at).toLocaleDateString('zh-CN',{month:'long',day:'numeric'}) }}</strong><small>{{ new Date(entry.created_at).toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit'}) }}</small></time><span class="timeline-event-mark"><img :src="icon(category(entry)==='buddy'?'users':category(entry)==='content'?'leaf':'book-open')" alt=""></span><div><span class="muted-label">{{ {learning:'学习记录',content:'内容记录',buddy:'伙伴与记忆'}[category(entry)] }}</span><h2>{{ entry.title }}</h2><p>{{ state.boot.sessions.find(s=>s.id===entry.session_id)?.title||'本地学习空间' }}</p><button v-if="entry.session_id" class="secondary-button" @click="openSession(entry.session_id)">查看对应目标</button></div><img :src="picture(entry)" alt=""></article><div v-if="!entries.length" class="studio-empty-soft"><img src="/assets/split-elements/elements/message-dove.compact.webp" alt=""><h2>每一次行动，都会留下来。</h2><p>新建目标、完成练习、保存笔记或加入资料后，这里会出现实际记录。</p><button class="primary-button" @click="emit('new-goal')">从一个学习目标开始</button></div><RecordPagination v-model="timelinePage" :total="entries.length" label="学习动态"/><p class="section-description">记录来自实际保存的学习活动。</p></div><aside><section class="timeline-letter-card"><h2>每一次学习，<br>都是一封写给未来的信。</h2><img src="/assets/split-elements/elements/messages-envelope.compact.webp" alt=""><small>—— 知行伴学</small></section><section class="studio-side-card"><img class="timeline-dove" src="/assets/split-elements/elements/message-dove.compact.webp" alt=""><h3>下一封信，从好奇开始。</h3><p>选择一门示例课程，或提出属于自己的问题。</p><button class="secondary-button" @click="emit('explore')">去探索课程</button></section></aside></div></section></template>

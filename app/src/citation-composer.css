@@ -1,0 +1,38 @@
+/* One continuous discussion surface; no second chat card or duplicate heading. */
+.citation-page-right{display:flex;flex-direction:column;gap:0;border:1px solid #e0eae3;border-radius:12px;background:linear-gradient(#eff6f2,#fafdfb);overflow:hidden}
+.citation-page-right .citation-mentor-area{border:0;border-radius:0;background-color:transparent;padding-bottom:14px}
+.citation-page-right .citation-page-chat{background:transparent;border:0;border-radius:0;padding:0 20px 20px;box-shadow:none}
+.citation-save-target{display:flex;align-items:center;gap:9px;font-size:10px;color:#6f8a7a;padding:0 0 15px;margin-top:-7px;max-width:100%}
+.citation-save-target select{min-width:0;max-width:75%;border:1px solid #e1eade;background:#ffffffb3;border-radius:6px;padding:6px;color:#557868;font-size:10px}
+.citation-page-right .citation-page-history{padding-top:5px;max-height:420px;margin-bottom:15px}
+.citation-page-right .citation-mentor-area:has(+.citation-page-chat .citation-page-history){padding-bottom:5px}
+.citation-entry-composer{position:relative;min-width:0;width:100%}
+.citation-attached-list{display:grid;gap:7px;margin:0 0 10px}
+.citation-attached-card{display:flex;align-items:center;gap:10px;padding:12px 13px;background:#f7faf8;border:1px solid #dce8e0;border-radius:9px;min-width:0}
+.citation-attached-card>img{width:30px;height:30px;object-fit:contain;border-radius:8px;background:#edf6f0;padding:5px;flex-shrink:0}
+.citation-attached-card>div{flex:1;min-width:0}.citation-attached-card strong{font-size:12px;font-weight:550;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#385c59;line-height:1.8}
+.citation-attached-card small{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:10px;color:#8a9b92;line-height:1.8;margin-top:2px}
+.citation-attached-card>button{background:none;display:grid;place-items:center;padding:5px;border-radius:5px;flex-shrink:0}.citation-attached-card>button>img{width:16px;height:16px}
+.citation-input-box{background:#fff;border:1px solid #6ca696;border-radius:9px;padding:12px 13px;box-shadow:0 0 0 1px #e7f1eb}
+.citation-input-box:focus-within{border-color:#246b60;box-shadow:0 0 0 2px #4f94831a}
+.citation-input-box textarea{width:100%;border:0;outline:0;background:transparent;padding:0 0 12px;resize:vertical;min-height:95px;max-height:240px;font:13px/1.9 var(--font-ui);color:#345b57;display:block}
+.citation-input-box textarea::placeholder{color:#8a9c98}.citation-input-box textarea:focus-visible{outline:none}
+.citation-input-box>footer{display:flex;align-items:center;gap:11px;min-width:0}
+.citation-input-tools{display:flex;align-items:center;gap:9px;margin-right:auto;min-width:0}
+.citation-attachment-button{display:grid;place-items:center;width:29px;height:29px;border-radius:6px;background:transparent;flex-shrink:0}.citation-attachment-button>img{width:20px;height:20px}
+.citation-reference-button{display:flex;gap:6px;align-items:center;padding:5px 9px;border:1px solid #e6eeea;background:#f6f9f7;border-radius:7px;font-size:11px;color:#58776b;white-space:nowrap;min-height:29px}.citation-reference-button>span{font-size:16px;line-height:1}
+.citation-input-box>footer>small{font-size:10px;color:#93a39b;white-space:nowrap}
+.citation-send-button{display:flex;align-items:center;justify-content:center;gap:6px;padding:9px 14px;background:#215f58;border:1px solid #215f58;border-radius:7px;color:#fff;font-size:12px;white-space:nowrap}.citation-send-button>img{width:18px;height:18px}.citation-send-button:disabled{opacity:.4;cursor:default}
+.citation-reference-picker{border:1px solid #d6e5dc;border-radius:10px;background:#fff;padding:14px;margin-bottom:12px;box-shadow:0 8px 20px #2c665a0c}
+.citation-reference-picker>header{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:#406d5c;margin-bottom:12px}.citation-reference-picker>header>button{background:none;font-size:20px;color:#769589;padding:0 5px}
+.citation-reference-picker>label{display:flex;align-items:center;gap:7px;background:#f1f6f2;border:1px solid #e2ebe3;border-radius:6px;padding:8px 10px}.citation-reference-picker>label>img{width:15px;height:15px}.citation-reference-picker input{border:0;outline:0;background:none;min-width:0;width:100%;font-size:12px;color:#486b59}
+.citation-reference-options{max-height:210px;overflow:auto;padding:6px 0}.citation-reference-options>button{display:flex;align-items:center;gap:10px;text-align:left;width:100%;border:0;border-radius:6px;background:#fff;padding:9px;color:#52775e}.citation-reference-options>button[aria-pressed=true]{background:#edf6ee}.citation-reference-options>button>img{width:18px;height:18px;flex-shrink:0}.citation-reference-options>button>span{min-width:0}.citation-reference-options strong{display:block;font-size:12px;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.citation-reference-options small{display:block;font-size:10px;color:#8ca08d;margin-top:3px}
+.citation-reference-options>p,.citation-reference-picker>p{font-size:12px;line-height:1.8;color:#819482;padding:8px}
+.citation-reference-picker>footer{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:10px;border-top:1px solid #e8efe7;padding-top:12px}.citation-reference-picker>footer>.text-button{font-size:10px}.citation-reference-picker>footer>.secondary-button{font-size:10px;padding:7px 10px;min-height:30px}
+.citation-input-box button:focus-visible,.citation-reference-picker button:focus-visible{outline:2px solid #528c79;outline-offset:3px}
+/* Type labels must never inherit the tutor's scroll-area .conversation class. */
+.knowledge-result-type{flex:0 0 auto;align-self:center;min-height:0;max-width:90px;height:auto;line-height:1.5;overflow:visible}
+.knowledge-result{min-height:0;align-items:center}.knowledge-result-copy{flex:1 1 0;min-width:0}
+@media(min-width:1550px){.citation-page-right .citation-page-chat{padding:0 24px 24px}.citation-input-box textarea{min-height:115px;font-size:14px}.citation-attached-card strong{font-size:13px}}
+@media(max-width:1150px){.citation-page-right .citation-page-chat{padding:0 15px 15px}.citation-input-box>footer{gap:7px}.citation-input-tools{gap:5px}.citation-reference-button{font-size:10px;padding:5px 7px}.citation-send-button{font-size:11px;padding:8px 10px}.citation-attached-card{padding:10px}.citation-attached-card strong{font-size:11px}}
+@media(max-width:600px){.citation-page-right .citation-page-chat{padding:0 13px 15px}.citation-input-box{padding:11px}.citation-input-box textarea{min-height:90px;font-size:12px}.citation-input-tools{gap:3px}.citation-reference-button{font-size:10px;padding:5px 6px}.citation-attachment-button{width:24px}.citation-attachment-button>img{width:17px;height:17px}.citation-send-button{padding:8px 10px}.citation-input-box>footer>small{font-size:9px}.citation-input-box>footer{gap:6px}.citation-attached-card>img{width:25px;height:25px}.citation-attached-card{gap:7px;padding:9px}.citation-reference-picker{padding:12px}.citation-save-target{font-size:9px}.citation-reference-picker>footer{flex-wrap:wrap}.citation-attached-card small{font-size:9px}}

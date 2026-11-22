@@ -1,0 +1,13 @@
+/* Consistent feedback for the actual web controls, preserving the project palette. */
+.studio-shell button:disabled{cursor:not-allowed}
+.studio-shell button[aria-busy=true]{cursor:progress}
+.primary-button,.secondary-button,.citation-send-button,.citation-reference-button{transition:background-color .12s ease,border-color .12s ease,box-shadow .12s ease,transform .08s ease}
+.primary-button:not(:disabled):active,.secondary-button:not(:disabled):active,.citation-send-button:not(:disabled):active{transform:translateY(1px)}
+.primary-button:not(:disabled):hover,.citation-send-button:not(:disabled):hover{background:#1b514c}
+.secondary-button:not(:disabled):hover{background:#eef5ef;border-color:#aecbb8}
+.citation-reference-button:not(:disabled):hover{background:#eaf3ec;border-color:#c3dcca}
+/* Input focus is defined once in input-focus.css. */
+.studio-shell input:user-invalid,.studio-shell textarea:user-invalid{border-color:#bd7868}
+.studio-shell a:focus-visible,.studio-shell button:focus-visible{outline:2px solid #4b866d;outline-offset:3px}
+.studio-shell .inline-error{line-height:1.8}
+@media(prefers-reduced-motion:reduce){.primary-button,.secondary-button,.citation-send-button,.citation-reference-button{transition:none}.primary-button:not(:disabled):active,.secondary-button:not(:disabled):active,.citation-send-button:not(:disabled):active{transform:none}}

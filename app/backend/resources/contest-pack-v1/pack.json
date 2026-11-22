@@ -1,0 +1,17 @@
+{
+  "pack_id": "core-20261106",
+  "version": "2026.11.09.1",
+  "task_count": 224,
+  "objective_count": 123,
+  "checksum": "c907f990833ced5c6930a6f274b0dc528c647eaf6b4e7930b945871315313b06",
+  "files": {
+    "private/assessment_contracts.jsonl": "08c4435b44a054e70e06c5730842da648877d96959141e055c9236e3ad6777c0",
+    "private/misconceptions.jsonl": "a09602d34745e535c1f895dabb2cad2e7ffd5937f0d0845d7887e00086fd14b3",
+    "public/lessons.jsonl": "55c882244adece9af9921ea932b7e14e8f47abf8c1c83593d4dc97f8b52e17b4",
+    "public/objectives.jsonl": "a903b34e75ef2a42445d8de83df4719487ce76d5e98179cb780602e5d0916cf5",
+    "public/reading_room_observations.csv": "ce514ca4a96736da385e895fa5b0e44970ef53d8b847a9bfe63f4a5e2786464a",
+    "public/relations.jsonl": "e521a57c83c51e148e3f24f20a2bf306f9c1fe47687f0b7ec1277e038a58c246",
+    "public/sources.jsonl": "c57f1c6fd93837a2cd0b900e8a94784135535bcfd2afc9e803f13e50d734a355",
+    "public/tasks.jsonl": "c907f990833ced5c6930a6f274b0dc528c647eaf6b4e7930b945871315313b06"
+  }
+}

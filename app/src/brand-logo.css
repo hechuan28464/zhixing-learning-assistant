@@ -1,0 +1,18 @@
+/* Preserve the approved full-colour mark on both dark and light surfaces. */
+.sidebar .brand-lockup>img,
+.entry-brand>img,
+.auth-brand>img{
+  background:#dce9dc;
+  border:1px solid #f4f8ef;
+  border-radius:11px;
+  padding:4px;
+  box-sizing:border-box;
+  object-fit:contain;
+  flex-shrink:0;
+  opacity:1;
+}
+.sidebar .brand-lockup>img{width:56px;height:56px}
+.entry-brand>img{width:52px;height:52px}
+.auth-brand>img{width:48px;height:48px}
+@media(max-width:1000px){.sidebar .brand-lockup>img{width:48px;height:48px}}
+@media(max-width:600px){.entry-header .entry-brand>img{width:40px;height:40px;padding:3px;border-radius:9px}}

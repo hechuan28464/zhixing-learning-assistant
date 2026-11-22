@@ -1,0 +1,16 @@
+/* Field focus belongs to the editable surface, never an extra rectangle inside it. */
+:root{--field-focus-border:#4f8b78;--field-focus-halo:rgba(54,121,99,.12);--field-keyboard-halo:rgba(54,121,99,.21);--field-current-halo:var(--field-focus-halo)}
+:root[data-input-modality=keyboard]{--field-current-halo:var(--field-keyboard-halo)}
+.studio-shell :is(input:not([type=checkbox],[type=radio],[type=file],[type=button],[type=submit],[type=reset]),textarea,select){caret-color:#245e53;transition:border-color .14s ease,box-shadow .14s ease}
+.studio-shell :is(input:not([type=checkbox],[type=radio],[type=file],[type=button],[type=submit],[type=reset]),textarea,select):focus{outline:none;outline-offset:0;border-color:var(--field-focus-border);box-shadow:0 0 0 3px var(--field-current-halo)}
+.studio-shell :is(input:not([type=checkbox],[type=radio],[type=file],[type=button],[type=submit],[type=reset]),textarea,select):focus-visible{outline:none;box-shadow:0 0 0 3px var(--field-current-halo)}
+.studio-shell .top-search{border:1px solid transparent;transition:border-color .14s ease,box-shadow .14s ease,background-color .14s ease}
+.studio-shell .hero-search,.studio-shell .knowledge-search,.studio-shell .citation-input-box,.studio-shell .citation-reference-picker>label,.reference-search-surface,.studio-shell .file-picker{transition:border-color .14s ease,box-shadow .14s ease}
+.studio-shell :is(.top-search,.hero-search,.knowledge-search,.citation-input-box,.citation-reference-picker>label,.reference-search-surface,.file-picker):focus-within{outline:none;border-color:var(--field-focus-border);box-shadow:0 0 0 3px var(--field-current-halo)}
+.studio-shell :is(.top-search,.hero-search,.knowledge-search,.citation-input-box,.citation-reference-picker>label,.reference-search-surface,.file-picker):has(:focus-visible){box-shadow:0 0 0 3px var(--field-current-halo)}
+.studio-shell :is(.top-search,.hero-search,.knowledge-search,.citation-input-box,.citation-reference-picker>label,.reference-search-surface,.file-picker) :is(input,textarea):is(:focus,:focus-visible){outline:none;outline-offset:0;box-shadow:none;border-color:transparent}
+.studio-shell input:is([type=checkbox],[type=radio]):focus-visible{outline:2px solid var(--field-focus-border);outline-offset:3px}
+.studio-shell .settings-period input[type=radio]:focus-visible{outline:none}
+.studio-shell .settings-period label:focus-within{outline:none;border-color:var(--field-focus-border);box-shadow:0 0 0 3px var(--field-current-halo)}
+@media(forced-colors:active){.studio-shell :is(input,textarea,select):focus-visible{outline:2px solid Highlight;outline-offset:2px}.studio-shell :is(.top-search,.hero-search,.knowledge-search,.citation-input-box,.citation-reference-picker>label,.reference-search-surface,.file-picker):focus-within{outline:2px solid Highlight;outline-offset:2px}.studio-shell :is(.top-search,.hero-search,.knowledge-search,.citation-input-box,.citation-reference-picker>label,.reference-search-surface,.file-picker) :is(input,textarea):focus-visible{outline:none}}
+@media(prefers-reduced-motion:reduce){.studio-shell :is(input,textarea,select,.top-search,.hero-search,.knowledge-search,.citation-input-box,.citation-reference-picker>label,.reference-search-surface,.file-picker){transition:none}}

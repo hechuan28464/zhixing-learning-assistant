@@ -1,0 +1,13 @@
+﻿observation_id,room,time_slot,available_seats,occupied_seats,data_origin
+A1,A,周一上午,20,10,authored_demo_not_real_measurement
+A2,A,周一下午,20,16,authored_demo_not_real_measurement
+A3,A,周三上午,20,14,authored_demo_not_real_measurement
+A4,A,周三下午,20,18,authored_demo_not_real_measurement
+A5,A,周六上午,20,19,authored_demo_not_real_measurement
+A6,A,周六下午,20,20,authored_demo_not_real_measurement
+B1,B,周一上午,30,12,authored_demo_not_real_measurement
+B2,B,周一下午,30,18,authored_demo_not_real_measurement
+B3,B,周三上午,30,18,authored_demo_not_real_measurement
+B4,B,周三下午,30,21,authored_demo_not_real_measurement
+B5,B,周六上午,30,27,authored_demo_not_real_measurement
+B6,B,周六下午,30,24,authored_demo_not_real_measurement

@@ -1,0 +1,290 @@
+{
+  "agent-task.png": {
+    "width": 1552,
+    "height": 1388,
+    "pageH": 1717,
+    "source": "F:\\实训伴学4\\contest-video\\public\\textures\\live\\agent-task.png",
+    "sha256": "f2c292c9c3f82513de258312b198fdad000552c4287b5009a63b5e6ce46764fd",
+    "focus_sha256": "1cee81adf51e4a17e905510fdac62fd6ce4929108ce356c0a923f9b3faffe0a7",
+    "crop_box": [
+      554,
+      169,
+      2106,
+      1557
+    ]
+  },
+  "agent-tools.png": {
+    "width": 1494,
+    "height": 968,
+    "pageH": 1244,
+    "source": "F:\\实训伴学4\\contest-video\\public\\textures\\live\\agent-tools.png",
+    "sha256": "f4176e1dc7dbd42007b2b36e568fb761bc58396afcf437d7adeb7777f8712f40",
+    "focus_sha256": "a6ab199b2cd408d3e1327d6b5343b7721ef693c92b51b92e01abf13630beee3e",
+    "crop_box": [
+      572,
+      202,
+      2066,
+      1170
+    ]
+  },
+  "agent.png": {
+    "width": 1494,
+    "height": 945,
+    "pageH": 1214,
+    "source": "F:\\实训伴学4\\contest-video\\public\\textures\\live\\agent.png",
+    "sha256": "4e618ac1205a29e3216b7564214533e837ead4c60ddea6edbf6c9de0f738edc6",
+    "focus_sha256": "54237aaf33c55f185e0b700a074a3135a643eca7d22de13cdffe89d2a36cc6d1",
+    "crop_box": [
+      572,
+      225,
+      2066,
+      1170
+    ]
+  },
+  "catalog.png": {
+    "width": 2052,
+    "height": 1440,
+    "pageH": 1347,
+    "source": "F:\\实训伴学4\\contest-video\\public\\textures\\live\\catalog.png",
+    "sha256": "373dd4675ebc7573f567516ea364ff540a8b3ea52c7794b97a7edde482861c6d",
+    "focus_sha256": "f863a88b912e848a7f69fc894294cce212448409d298d14edb316630e2b70e4e",
+    "crop_box": [
+      490,
+      101,
+      2542,
+      1541
+    ]
+  },
+  "citation.png": {
+    "width": 2214,
+    "height": 1170,
+    "pageH": 1015,
+    "source": "F:\\实训伴学4\\contest-video\\public\\textures\\live\\citation.png",
+    "sha256": "5257f2799b5f5772a41d788d3ca0daa1cb51ad54273eb8b9e4669359ba2fccf0",
+    "focus_sha256": "69b5299fb61f8a8032fed369d909198fc36a0224bc25a3830a8c8c56758b90e4",
+    "crop_box": [
+      562,
+      450,
+      2776,
+      1620
+    ]
+  },
+  "courses.png": {
+    "width": 2232,
+    "height": 1125,
+    "pageH": 968,
+    "source": "F:\\实训伴学4\\contest-video\\public\\textures\\live\\courses.png",
+    "sha256": "3c2314ca1a8f9800618f639bc0ae4b37d5312e60f88aa95d23b3355fda7ce17a",
+    "focus_sha256": "d3cbe22140601e3934e0583836e7621a396e3e55f2256f0e1628d282d2772dbe",
+    "crop_box": [
+      558,
+      495,
+      2790,
+      1620
+    ]
+  },
+  "diagnostic.png": {
+    "width": 1552,
+    "height": 1152,
+    "pageH": 1425,
+    "source": "F:\\实训伴学4\\contest-video\\public\\textures\\live\\diagnostic.png",
+    "sha256": "b8103f0f902b40540f677f3f4cee63b4935dbcab84466f4e37dc821bb38f7061",
+    "focus_sha256": "4e52b7fb958c0276ad9be837d6fb3ce181e03b9e7308ec4a323cc0bd97288525",
+    "crop_box": [
+      554,
+      405,
+      2106,
+      1557
+    ]
+  },
+  "evidence.png": {
+    "width": 1586,
+    "height": 338,
+    "pageH": 409,
+    "source": "F:\\实训伴学4\\contest-video\\public\\textures\\live\\evidence.png",
+    "sha256": "f68ed6ced8b3612ef97eb6fe69d5a266461b265a0b79fd99e9e9a39c5538bb16",
+    "focus_sha256": "b0d0743c85036d5edb9b67aa0db3e1bfba0e6e8daa7bc281614e5f3de2931418",
+    "crop_box": [
+      554,
+      686,
+      2140,
+      1024
+    ]
+  },
+  "graph-full.png": {
+    "width": 989,
+    "height": 2614,
+    "pageH": 5075,
+    "source": "F:\\实训伴学4\\contest-video\\public\\textures\\live\\graph-full.png",
+    "sha256": "c01e2b91bf79556fcf9bc837fc580d036d958d75a6c8e935b2b4c6c0218d6c40",
+    "focus_sha256": "22decf3154d5743d396be7cc69e16ff4ad965d8b1531dd82ff4d4d239cc38de7",
+    "crop_box": null
+  },
+  "graph.png": {
+    "width": 2202,
+    "height": 878,
+    "pageH": 766,
+    "source": "F:\\实训伴学4\\contest-video\\public\\textures\\live\\graph.png",
+    "sha256": "a11c6ee1a172f80c6991fa19b32813a280803daef1e0a50bf3c0d311a12a31e0",
+    "focus_sha256": "59c82563b4a03ac7475650778de0b8b7b934457355b987f94500b826333803cd",
+    "crop_box": [
+      574,
+      742,
+      2776,
+      1620
+    ]
+  },
+  "history.png": {
+    "width": 1552,
+    "height": 596,
+    "pageH": 737,
+    "source": "F:\\实训伴学4\\contest-video\\public\\textures\\live\\history.png",
+    "sha256": "af8b94e33a7f729a288b426b54527c6ff873024f8e1ad3241f5386fbd5be2167",
+    "focus_sha256": "fc477459ff48e5788e5ef4605395543ab1d9c4aa1c49714305ab69c5f71bb576",
+    "crop_box": [
+      554,
+      1024,
+      2106,
+      1620
+    ]
+  },
+  "home.png": {
+    "width": 2880,
+    "height": 1620,
+    "pageH": 1080,
+    "source": "F:\\实训伴学4\\contest-video\\public\\textures\\live\\home.png",
+    "sha256": "a066b5debe3b835088142a9fb5dc8038ad256dfdf729a7d64926e7ec4564625f",
+    "focus_sha256": "77d2daf9f9f67221bb39b2f033f4ac75f3364bea3b98023c08993c85063285e2",
+    "crop_box": [
+      0,
+      0,
+      2880,
+      1620
+    ]
+  },
+  "knowledge.png": {
+    "width": 2214,
+    "height": 1136,
+    "pageH": 985,
+    "source": "F:\\实训伴学4\\contest-video\\public\\textures\\live\\knowledge.png",
+    "sha256": "60f8429e51d09c84457c4faa23b6ef91f4bc35062714f7b084eac8821ba25940",
+    "focus_sha256": "b6ab6e5a20be8216a9d11627471ad2cac7da93e291a823ea8a51c9fb9d015723",
+    "crop_box": [
+      562,
+      484,
+      2776,
+      1620
+    ]
+  },
+  "memory.png": {
+    "width": 760,
+    "height": 790,
+    "pageH": 1996,
+    "source": "F:\\实训伴学4\\contest-video\\public\\textures\\live\\memory.png",
+    "sha256": "509fd7d336a89615cd173d909a72a9155a86d5054ee57e6e55b0dd60d01bd8e6",
+    "focus_sha256": "74349ee2307fd428ea27595ba2477f521ac6eccc9432f13a894ba6874e865b4b",
+    "crop_box": null
+  },
+  "pbl-overview.png": {
+    "width": 2202,
+    "height": 1147,
+    "pageH": 1000,
+    "source": "F:\\实训伴学4\\contest-video\\public\\textures\\live\\pbl-overview.png",
+    "sha256": "ca5de99dfcadeab1e5e3e8f93e34312bc51f6ba255dd36d2b9bc75a7c24a0d11",
+    "focus_sha256": "5905245b4d503fc5e36551218bcb8f1e4080e0b289c6aa9531f2b1e23eb7ab70",
+    "crop_box": [
+      574,
+      338,
+      2776,
+      1485
+    ]
+  },
+  "pbl-plan.png": {
+    "width": 1057,
+    "height": 590,
+    "pageH": 1072,
+    "source": "F:\\实训伴学4\\contest-video\\public\\textures\\live\\pbl-plan.png",
+    "sha256": "9ae349c3df11fddb1edbe65a15e9c4df03db63c463c3d473c40b74893b2f66f7",
+    "focus_sha256": "c43eef6ffa3770c186e61d06b88cb5796dfd68f0ecc06fbe57285fe0e19d412d",
+    "crop_box": null
+  },
+  "pbl-run.png": {
+    "width": 618,
+    "height": 527,
+    "pageH": 1637,
+    "source": "F:\\实训伴学4\\contest-video\\public\\textures\\live\\pbl-run.png",
+    "sha256": "8f6f97d47fd6be34e282d22885be5ad271082121f4ff3a7c5b43b58a3ae52687",
+    "focus_sha256": "993ccd6df081454360710eeb818913259f11afc3b3eb41fbe44a4ee5288d3089",
+    "crop_box": null
+  },
+  "remedy.png": {
+    "width": 1552,
+    "height": 1080,
+    "pageH": 1336,
+    "source": "F:\\实训伴学4\\contest-video\\public\\textures\\live\\remedy.png",
+    "sha256": "58c87b35d426587204c63e88a786fc69957248e7b0be370d89dbc3cfe70d7a02",
+    "focus_sha256": "ae0a8bf1ecd150f43b8b1f4f7bd6394b5f393d0e26c764a5ba8dda7d2022a67f",
+    "crop_box": [
+      554,
+      477,
+      2106,
+      1557
+    ]
+  },
+  "review.png": {
+    "width": 1552,
+    "height": 1080,
+    "pageH": 1336,
+    "source": "F:\\实训伴学4\\contest-video\\public\\textures\\live\\review.png",
+    "sha256": "d461bca8ab2bad3c8eae5414a386f90fbe41b1133485a946ac5a18541fbd408a",
+    "focus_sha256": "d194a86e64897ade2ab1faf5a009fdeb820c1305905a3ccaf4668109514ecdfd",
+    "crop_box": [
+      554,
+      477,
+      2106,
+      1557
+    ]
+  },
+  "video-page.png": {
+    "width": 922,
+    "height": 877,
+    "pageH": 1826,
+    "source": "F:\\实训伴学4\\contest-video\\public\\textures\\live\\video-page.png",
+    "sha256": "36365728596b26e1b63f6cde4be23ba1042bb0bf8c0855557003e87247d9a379",
+    "focus_sha256": "279e2ad3037481cf77b8d131f1d0c5289db5588a65aeed943bead07378a4add5",
+    "crop_box": [
+      574,
+      518,
+      1496,
+      1395
+    ]
+  },
+  "video-search.png": {
+    "width": 922,
+    "height": 794,
+    "pageH": 1653,
+    "source": "F:\\实训伴学4\\contest-video\\public\\textures\\live\\video-search.png",
+    "sha256": "e0029a32f5c5c3b897daeb85abb487e7a0d6eb11f08db38f6f47bd3999cdbb0b",
+    "focus_sha256": "b84076aec0cd99fb0d1ada271743bec291960ce8412c1fea2d87d829920138fe",
+    "crop_box": [
+      574,
+      758,
+      1496,
+      1552
+    ]
+  },
+  "video.png": {
+    "width": 407,
+    "height": 378,
+    "pageH": 1783,
+    "source": "F:\\实训伴学4\\参赛交付_20261110\\素材\\教学视频字幕.png",
+    "sha256": "b13780c85d4cdac7e1861cf7427358a57fe18ea6cb9cffb78e93b0ba0bbddcc3",
+    "focus_sha256": "8b28061a445429da38999b4f216996946a85b9da2fe8516beaaa2ea241bdea7d",
+    "crop_box": [
+      256,
+      490,
+      663,
+      868
+    ]
+  }
+}

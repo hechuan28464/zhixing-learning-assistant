@@ -1,0 +1,19 @@
+# Deployment from locally verified static files and the bundled native PBL bridge.
+FROM node:24-bookworm-slim@sha256:01d566e8d94d8c619591d78652babfccd3c6992a3dffa9ed5ab39e11cf6c70e9 AS node-runtime
+FROM python:3.12-slim@sha256:4840d514c583a4d3d8cad3940e68dee6f0f6f3635c12fcd0a3d74c21a5b93a54 AS api
+COPY --from=node-runtime /usr/local/bin/node /usr/local/bin/node
+RUN node --version && python --version
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
+WORKDIR /workspace/app
+COPY app/requirements-lock.txt ./requirements-lock.txt
+COPY app/deploy/wheels /wheels
+RUN pip install --no-cache-dir --no-index --find-links=/wheels -r requirements-lock.txt && rm -rf /wheels
+COPY app/backend ./backend
+COPY app/integrations/openmaic/bridge.mjs ./integrations/openmaic/bridge.mjs
+COPY app/integrations/openmaic/LICENSES ./integrations/openmaic/LICENSES
+COPY scripts/check_model_api.py /workspace/scripts/check_model_api.py
+CMD ["uvicorn","backend.main:app","--host","0.0.0.0","--port","8765","--workers","1"]
+
+FROM nginx:stable-alpine@sha256:583b7f2fce1cdb8da5ad5c39ebd3c33b98b87d493190e548bdee1fa8c619c311 AS web
+COPY app/dist /usr/share/nginx/html
+COPY app/deploy/server/nginx.conf /etc/nginx/conf.d/default.conf

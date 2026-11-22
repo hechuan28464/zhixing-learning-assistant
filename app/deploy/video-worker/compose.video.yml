@@ -1,0 +1,24 @@
+# Add to the existing runtime compose files; do not start this as a second app.
+services:
+  api:
+    environment:
+      STUDY_VIDEO_EXTERNAL_WORKER: '1'
+  video-worker:
+    build:
+      context: ../../..
+      dockerfile: app/deploy/video-worker/Dockerfile
+    env_file: ../server/.env.server
+    environment:
+      STUDY_DB_PATH: /data/learning.sqlite3
+      STUDY_VIDEO_EXTERNAL_WORKER: '1'
+      STUDY_VIDEO_ASR_MODEL: tiny
+      HF_HOME: /data/video-assets/models/hf
+    volumes: ['learning-data:/data']
+    read_only: true
+    tmpfs: ['/tmp:size=67108864,mode=1777']
+    cap_drop: [ALL]
+    security_opt: ['no-new-privileges:true']
+    mem_limit: 768m
+    cpus: 1.0
+    pids_limit: 64
+    restart: unless-stopped

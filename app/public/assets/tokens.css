@@ -1,0 +1,13 @@
+:root {
+  --brand-teal: #225e59;
+  --brand-teal-deep: #1d4e4c;
+  --brand-sage: #eaf2ee;
+  --brand-apricot: #efba8f;
+  --brand-lavender: #b9b8d4;
+  --text-main: #20363c;
+  --text-muted: #748381;
+  --surface: #ffffff;
+  --canvas: #f7f9f7;
+  --border: #e5ece8;
+  --font-ui: 'Segoe UI Variable', 'Microsoft YaHei UI', 'PingFang SC', sans-serif;
+}

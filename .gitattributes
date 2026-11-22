@@ -1,0 +1,14 @@
+* text=auto eol=lf
+
+# Content-pack and upstream integrity manifests hash the exact source bytes.
+app/backend/resources/** -text
+app/vendor/openmaic-v1.4.0/** -text
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
